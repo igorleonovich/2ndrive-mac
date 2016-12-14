@@ -6,14 +6,14 @@
 	<string>local.2ndrive.plist</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>~/2ndrive.sh</string>
+		<string>/Library/Scripts/2ndrive.sh</string>
 		<string>eject</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
 	<key>StandardErrorPath</key>
-	<string>/tmp/com.myjob.disable2nddrive.plist.err</string>
+	<string>/tmp/local.2ndrive.err</string>
 	<key>StandardOutPath</key>
-	<string>/tmp/com.myjob.disable2nddrive.plist.out</string>
+	<string>/tmp/local.2ndrive.out</string>
 </dict>
 </plist>
