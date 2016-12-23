@@ -8,7 +8,7 @@ Bash script for auto ejecting 2nd drive on a Mac OS' boot
 4. Put it into 2ndrive.sh instead of `*****YOUR DRIVE'S NAME*****`
 5. Run in Terminal 'sudo cp local.2ndrive.plist /Library/LaunchDaemons/local.2ndrive.plist'
 6. Run in Terminal `sudo launchctl load /Library/LaunchDaemons/local.2ndrive.plist`
-7. Open your's `~/.bash.profile` in some text editor and add there these lines:
+7. Open your's `~/.bash_profile` in some text editor and add there these lines:
     `alias 2ndon='sh /Library/Scripts/2ndrive.sh mountDrive'`
     `alias 2ndoff='sh /Library/Scripts/2ndrive.sh eject'`
 8. Restart your Mac
