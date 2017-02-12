@@ -1,5 +1,9 @@
-# 2ndrive
-Bash script for auto/manual ejecting second drive on a Mac OS' boot
+# 🦉2ndrive
+Bash script for auto/manual ejecting second drive on a Mac OS' boot.
+
+It helps you to decrease noise level of a computer and save battery power. 
+
+Typical usage of it assumes that some MacBook has both SDD and HDD and you do not want to use HDD constantly. Of course it may be helpful in some other cases.
 
 ## Steps
 1. Open Terminal, run `sh 2nd.sh`. 
