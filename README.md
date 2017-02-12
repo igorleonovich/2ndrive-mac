@@ -1,24 +1,14 @@
 # 2ndrive
-Bash script for auto ejecting 2nd drive on a Mac OS' boot
+Bash script for auto/manual ejecting second drive on a Mac OS' boot
 
 ## Steps
-1. Open Terminal, run `diskutil list`. 
-2. Find `/dev/disk*` of your drive which you want to auto disable on OS' boot.
-3. Run `diskutil info /dev/disk*`, copy it's `Device / Media Name`.
-4. Put it into 2ndrive.sh instead of `*****YOUR DRIVE'S NAME*****`
-5. Run in Terminal 'sudo cp local.2ndrive.plist /Library/LaunchDaemons/local.2ndrive.plist'
-6. Run in Terminal `sudo launchctl load /Library/LaunchDaemons/local.2ndrive.plist`
-7. Open your's `~/.bash_profile` in some text editor and add there these lines:
-    `alias 2ndon='sh /Library/Scripts/2ndrive.sh mountDrive'`
-    `alias 2ndoff='sh /Library/Scripts/2ndrive.sh eject'`
-8. Restart your Mac
+1. Open Terminal, run `sh 2nd.sh`. 
+2. From the shown list please enter a number of the disk that you want to disable automatically. 
+3. Re-run your Terminal to use new `2ndon` and `2ndoff` commands and restart your Mac to see how it works on a boot.
 
 ## Using
-- Your drive will be automatically turned off each time Mac OS is loaded at the moment of the login screen is appeared.
-- If you want to turn on your drive then run in Terminal `2ndon`
-- If you want to turn off your drive after enabling it then run in Terminal `2ndoff`
-
-## F.A.Q
-- If you receive an error `Path had bad ownership\permissions` then you should run the following in Terminal: `sudo chown root:wheel /Library/LaunchDaemons/local.2ndrive.plist`
+- Your selected drive will be automatically turned off each time Mac OS is loaded.
+- Run `2ndon` in the Terminal to enable the disk
+- Run `2ndoff` in the Terminal to disable the disk
 
 Enjoy!

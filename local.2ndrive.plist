@@ -8,6 +8,7 @@
 	<array>
 		<string>/Library/Scripts/2ndrive.sh</string>
 		<string>eject</string>
+		<string>/dev/disk?</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
