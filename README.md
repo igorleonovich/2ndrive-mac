@@ -1,4 +1,4 @@
-# 🦉2ndrive
+# 🦉 2ndrive
 The Bash script for auto/manual ejecting second drive on Mac OS' boot.
 
 If you have SSD and HDD and you do not want to use HDD constantly, it'll help you to decrease noise level of a computer and save battery power as well.
